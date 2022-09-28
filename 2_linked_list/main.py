@@ -1,5 +1,6 @@
 from slist import SList
 from dlist import DList
+from clist import CList
 
 '''
 if __name__ == '__main__':
@@ -10,7 +11,6 @@ if __name__ == '__main__':
     s.insert_after('cherry', s.head)
     s.print_list()
     #print('cherry는 %d번째' % s.search('cherry'))
-'''
 
 if __name__ == '__main__':
     d = DList()
@@ -20,4 +20,14 @@ if __name__ == '__main__':
     d.insert_after('pear', d.head.next)
     d.delete(d.head.next.next)
     d.print_list()
+'''
 
+if __name__ == '__main__':
+    c = CList()
+    c.insert('apple')
+    c.insert('orange')
+    c.insert('cherry')
+    c.insert('pear')
+    c.print_list()
+    c.delete()
+    c.print_list()
